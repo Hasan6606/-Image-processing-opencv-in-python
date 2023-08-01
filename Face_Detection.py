@@ -6,7 +6,7 @@ import cv2
 face_cascade=cv2.CascadeClassifier("haarcascade_frontalface_default.xml") 
 eye_cascade=cv2.CascadeClassifier("haarcascade_eye.xml")
 cap=cv2.VideoCapture(0)
-
+#If you define 0 which is laptop camera is active. However,ıf you defined 1 which is defined camere which was communication on USB serial port.
 while True:
     RET,img=cap.read()
     gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
